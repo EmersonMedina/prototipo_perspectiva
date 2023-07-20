@@ -382,7 +382,7 @@
           <!-- Begin Page Content -->
           <div class="container-fluid">
             <!-- Page Heading -->
-            <h1 class="h2 mb-1 text-dark text-center">Pacientes</h1>
+            <h1 class="h2 mb-1 text-dark text-center">Citas</h1>
             <div class="d-flex">
               <!-- Button trigger modal -->
               <button
@@ -416,47 +416,155 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nombres</th>
-                    <th scope="col">Apellidos</th>
-                    <th scope="col">Nro Identidad</th>
-                    <th scope="col">Dirección</th>
-                    <th scope="col">Edad</th>
-                    <th scope="col">Teléfono</th>
+                    <th scope="col">Fecha de Cita</th>
+                    <th scope="col">Hospital</th>
+                    <th scope="col">Nro de Sala</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Notas</th>
+                    <th>Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr>                    
                     <th scope="row">1</th>
-                    <td>Mark Antony</td>
-                    <td>Otto Padilla</td>
-                    <td>0801200019859</td>
-                    <td>Colonia Santa Cecilia</td>
-                    <td>25 Años</td>
-                    <td>96587412</td>
+                    <th>01/10/2023</td>
+                    <td>Hospital Escuela</td>
+                    <td>3</td>
+                    <td>Agendada</td>
+                    <td>Paciente grave</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        
+                        <button
+                type="button"
+                class="btn btn-success mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#verModal"
+              >
+                Ver
+              </button>
+              <button
+              type="button"
+              class="btn btn-warning mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#verModal"
+            >Editar
+            </button>
+                      </div>
+                      </td>
                   </tr>
-                  <tr>
+                  <tr>                    
                     <th scope="row">2</th>
-                    <td>Mark Antony</td>
-                    <td>Otto Padilla</td>
-                    <td>0801200019859</td>
-                    <td>Colonia Santa Cecilia</td>
-                    <td>25 Años</td>
-                    <td>96587412</td>
+                    <th>21/05/2023</td>
+                    <td>Hospital Viera</td>
+                    <td>4</td>
+                    <td>Agendada</td>
+                    <td>Paciente diabetico</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        
+                        <button
+                type="button"
+                class="btn btn-success mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#verModal"
+              >
+                Ver
+              </button>
+              <button
+              type="button"
+              class="btn btn-warning mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#verModal"
+            >Editar
+            </button>
+                      </div>
+                      </td>
                   </tr>
-                  <tr>
+                  <tr>                    
                     <th scope="row">3</th>
-                    <td>Mark Antony</td>
-                    <td>Otto Padilla</td>
-                    <td>0801200019859</td>
-                    <td>Colonia Santa Cecilia</td>
-                    <td>25 Años</td>
-                    <td>96587412</td>
+                    <th>03/01/32024</td>
+                    <td>Hospital Escuela</td>
+                    <td>1</td>
+                    <td>Agendada</td>
+                    <td>Monitorear paciente</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        
+                        <button
+                type="button"
+                class="btn btn-success mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#verModal"
+              >
+                Ver
+              </button>
+              <button
+              type="button"
+              class="btn btn-warning mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#verModal"
+            >Editar
+            </button>
+                      </div>
+                      </td>
+                  </tr>
+                  <tr>                    
+                    <th scope="row">4</th>
+                    <th>05/11/2023</td>
+                    <td>Hospital San Jorge</td>
+                    <td>1</td>
+                    <td>Agendada</td>
+                    <td>Paciente grave</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        
+                        <button
+                type="button"
+                class="btn btn-success mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#verModal"
+              >
+                Ver
+              </button>
+              <button
+              type="button"
+              class="btn btn-warning mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#verModal"
+            >Editar
+            </button>
+                      </div>
+                      </td>
+                  </tr>
+                  <tr>                    
+                    <th scope="row">5</th>
+                    <th>15/08/2023</td>
+                    <td>Hospital Escuela</td>
+                    <td>2</td>
+                    <td>Agendada</td>
+                    <td>Paciente urologico</td>
+                    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        
+                        <button
+                type="button"
+                class="btn btn-success mb-2"
+                data-bs-toggle="modal"
+                data-bs-target="#verModal"
+              >
+                Ver
+              </button>
+              <button
+              type="button"
+              class="btn btn-warning mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#verModal"
+            >Editar
+            </button>
+                      </div>
+                      </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <!-- Modal pacientes -->
+            <!-- Modal citas -->
             <!-- Modal -->
             <div
               class="modal fade"
@@ -469,7 +577,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      Agregar paciente
+                      Agendar Cita
                     </h5>
                     <button
                       type="button"
@@ -477,145 +585,206 @@
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
+                    
                   </div>
                   <div class="modal-body">
+                    
                     <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label"
-                          >Nombres</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label"
-                          >Apellidos</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"
-                          >Nro de teléfono</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"
-                          >Pariente Externo</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"
-                          >Nro. teléfono pariente externo</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-
-                      <div class="row">
                         <div class="col-6 mb-3">
-                          <label for="exampleInputPassword1" class="form-label"
-                            >Género</label
-                          >
-                          <select
-                            class="form-select"
-                            aria-label="Default select example"
-                          >
-                            <option selected>Seleccionar</option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
-                            <option value="3">No definido</option>
-                          </select>
-                        </div>
-
-                        <div class="mb-3 col-6">
-                          <label for="exampleInputPassword1" class="form-label"
-                            >Fecha Nacimiento</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            id="exampleInputPassword1"
-                          />
-                        </div>
+                            <label for="exampleInputPassword1" class="form-label"
+                              >Paciente</label
+                            >
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Seleccionar</option>
+                              <option value="1">Mark Antony	Otto Padilla</option>
+                              <option value="2">Mark Antony	Otto Padilla</option>
+                              <option value="3">Mark Antony	Otto Padilla</option>                              
+                            </select>
+                          </div>
+                        <div class="mb-3 col-12">
+                            <label for="exampleInputPassword1" class="form-label"
+                              >Fecha de Cita</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Nombre de Hospital:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
                       </div>
-
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Sala:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Estado</label
+                        >
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Seleccionar</option>
+                          <option value="1">Agendada</option>
+                          <option value="2">Cancelada</option>
+                          <option value="3">Perdida</option>
+                          <option value="3">Pospuesta</option>
+                        </select>
+                      </div>
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label"
-                          >Lugar de nacimiento</label
+                          >Notas</label
                         >
                         <input
                           type="password"
                           class="form-control"
                           id="exampleInputPassword1"
                         />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"
-                          >Edad</label
-                        >
-                        <input
-                          type="number"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"
-                          >Nacionalidad</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="exampleInputPassword1"
-                        />
-                      </div>
-
-                      <div class="form-floating">
-                        <label for="floatingTextarea">Dirección</label>
-                        <textarea
-                          class="form-control"
-                          id="floatingTextarea"
-                        ></textarea>
                       </div>
                     </form>
-                  </div>
-                  <div class="modal-footer">
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Guardar Cambios
+                  </button>
+                </div>
+                   
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="verModal"
+              tabindex="-1"
+              aria-labelledby="verModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="verModalLabel">
+                      Ver Cita
+                    </h5>
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      class="btn-close"
                       data-bs-dismiss="modal"
-                    >
-                      Cancelar
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Guardar Cambios
-                    </button>
+                      aria-label="Close"
+                    ></button>
+                    
                   </div>
+                  <div class="modal-body">
+                    
+                    <form>
+                        <div class="col-6 mb-3">
+                            <label for="exampleInputPassword1" class="form-label"
+                              >Paciente</label
+                            >
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"                            >
+                              <option value="1" selected>Mark Antony	Otto Padilla</option>                             
+                            </select>
+                          </div>
+                        <div class="mb-3 col-12">
+                            <label for="exampleInputPassword1" class="form-label"
+                              >Fecha de Cita</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                              value="10/10/2023"
+                            />
+                          </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Nombre de Hospital:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          value="Hospital Escuela"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Sala:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          value="3"
+                        />
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Estado</label
+                        >
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option value="1">Agendada</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Notas</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          value="Paciente grave"
+                        />
+                      </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Guardar Cambios
+                  </button>
+                </div>
+                   
                 </div>
               </div>
             </div>
